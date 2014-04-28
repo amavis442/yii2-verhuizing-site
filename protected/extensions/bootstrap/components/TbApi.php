@@ -62,7 +62,7 @@ class TbApi extends CApplicationComponent
     public function registerResponsiveCss($url = null, $media = 'screen')
     {
         if ($url === null) {
-            $fileName = YII_DEBUG ? 'bootstrap-responsive.css' : 'bootstrap-responsive.min.css';
+            $fileName = YII_DEBUG ? 'bootstrap.css' : 'bootstrap.min.css';
             $url = $this->getAssetsUrl() . '/css/' . $fileName;
         }
         /** @var CClientScript $cs */

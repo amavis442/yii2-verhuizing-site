@@ -6,7 +6,7 @@
 // CWebApplication properties can be configured here.
 return array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
-    'name' => 'Verhuizing',
+    'name' => 'Pame transport verhuis service',
     // preloading 'log' component
     'preload' => array('log'),
     // path aliases
@@ -88,6 +88,6 @@ return array(
 // using Yii::app()->params['paramName']
     'params' => array(
 // this is used in contact page
-        'adminEmail' => 'webmaster@example.com',
+        'adminEmail' => 'sales@pameairways.nl',
     ),
 );

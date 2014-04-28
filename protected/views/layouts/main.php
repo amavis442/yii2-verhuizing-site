@@ -21,9 +21,8 @@
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 
-        
-        <?php Yii::app()->clientScript->registerCoreScript('jquery'); ?>
 
+        <?php Yii::app()->clientScript->registerCoreScript('jquery'); ?>
         <title><?php echo CHtml::encode($this->pageTitle); ?></title>
     </head>
 
@@ -38,15 +37,14 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Verhuizing</a>
+                    <a class="navbar-brand" href="#">Pame transport verhuis service</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <?php
                     $this->widget('zii.widgets.CMenu', array(
                         'items' => array(
                             array('label' => 'Home', 'url' => array('/site/index')),
-                            array('label' => 'About', 'url' => array('/site/page', 'view' => 'about')),
-                            array('label' => 'Contact', 'url' => array('/site/contact')),
+                            array('label' => 'Contact/Boeken', 'url' => array('/site/contact')),
                             array('label' => 'Login', 'url' => array('/site/login'), 'visible' => Yii::app()->user->isGuest),
                             array('label' => 'Logout (' . Yii::app()->user->name . ')', 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest)
                         ),
@@ -58,34 +56,27 @@
         </div>
 
 
+
         <div class="container">
+
+            <?php if (isset($this->breadcrumbs) && count($this->breadcrumbs) > 0): ?>
+                <?php
+                echo TbHtml::breadcrumbs($this->breadcrumbs);
+                ?><!-- breadcrumbs -->
+            <?php endif ?>
+
+
             <div class="jumbotron">
-                <div id="header">
-                    <div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
-                </div><!-- header -->
-
-                <?php if (isset($this->breadcrumbs) && count($this->breadcrumbs) > 0): ?>
-                    <?php
-                        echo TbHtml::breadcrumbs($this->breadcrumbs);
-                    ?><!-- breadcrumbs -->
-                <?php endif ?>
-
-                    
-                    
                 <?php echo $content; ?>
-
-                <div class="clear"></div>
-
-                <div id="footer">
-                    Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
-                    All Rights Reserved.<br/>
-                    <?php echo Yii::powered(); ?>
-                </div><!-- footer -->
             </div>
         </div><!-- page -->
 
+        <div id="footer">
 
-        <script src="<?php echo Yii::app()->request->baseUrl; ?>/bootstrap-3.1.1/dist/js/bootstrap.min.js"></script>
-
+            <p class="text-muted">
+                Copyright &copy; <?php echo date('Y'); ?> by Patrickswebsite.nl .<br/>
+                All Rights Reserved.<br/>
+            </p>
+        </div><!-- footer -->
     </body>
 </html>
