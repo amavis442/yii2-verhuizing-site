@@ -1,0 +1,102 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/patrick\/wd1tera\/projecten\/websites\/sites\/verhuizing\/sass\/site\.scss}line{font-family:\000032}}
+html,
+body {
+  height: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/patrick\/wd1tera\/projecten\/websites\/sites\/verhuizing\/sass\/site\.scss}line{font-family:\000036}}
+.wrap {
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto -60px;
+  padding: 0 0 60px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/patrick\/wd1tera\/projecten\/websites\/sites\/verhuizing\/sass\/site\.scss}line{font-family:\0000313}}
+.wrap > .container {
+  padding: 70px 15px 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/patrick\/wd1tera\/projecten\/websites\/sites\/verhuizing\/sass\/site\.scss}line{font-family:\0000317}}
+.footer {
+  height: 60px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+  padding-top: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/patrick\/wd1tera\/projecten\/websites\/sites\/verhuizing\/sass\/site\.scss}line{font-family:\0000324}}
+.jumbotron {
+  text-align: center;
+  background-color: transparent; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/patrick\/wd1tera\/projecten\/websites\/sites\/verhuizing\/sass\/site\.scss}line{font-family:\0000329}}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/patrick\/wd1tera\/projecten\/websites\/sites\/verhuizing\/sass\/site\.scss}line{font-family:\0000334}}
+.not-set {
+  color: #c55;
+  font-style: italic; }
+
+/* add sorting icons to gridview sort links */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/patrick\/wd1tera\/projecten\/websites\/sites\/verhuizing\/sass\/site\.scss}line{font-family:\0000340}}
+a.asc:after, a.desc:after {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  padding-left: 5px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/patrick\/wd1tera\/projecten\/websites\/sites\/verhuizing\/sass\/site\.scss}line{font-family:\0000351}}
+a.asc:after {
+  content: "\e151"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/patrick\/wd1tera\/projecten\/websites\/sites\/verhuizing\/sass\/site\.scss}line{font-family:\0000355}}
+a.desc:after {
+  content: "\e152"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/patrick\/wd1tera\/projecten\/websites\/sites\/verhuizing\/sass\/site\.scss}line{font-family:\0000359}}
+.sort-numerical a.asc:after {
+  content: "\e153"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/patrick\/wd1tera\/projecten\/websites\/sites\/verhuizing\/sass\/site\.scss}line{font-family:\0000363}}
+.sort-numerical a.desc:after {
+  content: "\e154"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/patrick\/wd1tera\/projecten\/websites\/sites\/verhuizing\/sass\/site\.scss}line{font-family:\0000367}}
+.sort-ordinal a.asc:after {
+  content: "\e155"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/patrick\/wd1tera\/projecten\/websites\/sites\/verhuizing\/sass\/site\.scss}line{font-family:\0000371}}
+.sort-ordinal a.desc:after {
+  content: "\e156"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/patrick\/wd1tera\/projecten\/websites\/sites\/verhuizing\/sass\/site\.scss}line{font-family:\0000375}}
+.grid-view th {
+  white-space: nowrap; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/patrick\/wd1tera\/projecten\/websites\/sites\/verhuizing\/sass\/site\.scss}line{font-family:\0000379}}
+.hint-block {
+  display: block;
+  margin-top: 5px;
+  color: #999; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/patrick\/wd1tera\/projecten\/websites\/sites\/verhuizing\/sass\/site\.scss}line{font-family:\0000385}}
+.error-summary {
+  color: #a94442;
+  background: #fdf7f7;
+  border-left: 3px solid #eed3d7;
+  padding: 10px 20px;
+  margin: 0 0 15px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/patrick\/wd1tera\/projecten\/websites\/sites\/verhuizing\/sass\/_carousel\.scss}line{font-family:\000031}}
+.carousel {
+  width: 600px;
+  margin: auto;
+  background-image: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/media\/patrick\/wd1tera\/projecten\/websites\/sites\/verhuizing\/sass\/_carousel\.scss}line{font-family:\000032}}
+.carousel-inner > .item > img {
+  height: 360px;
+  margin: auto; }

@@ -5,6 +5,7 @@ use yii\widgets\ActiveForm;
 use yii\jui\DatePicker;
 use yii\captcha\Captcha;
 use yii\bootstrap\Dropdown;
+use dosamigos\ckeditor\CKEditor;
 /**
  * @var yii\web\View $this
  * @var yii\widgets\ActiveForm $form
@@ -39,9 +40,21 @@ $this->params['breadcrumbs'][] = $this->title;
             If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
         </p>
 
+
+        
+        
         <div class="row">
             <div class="col-lg-5">
                 <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
+ 
+
+        <?php echo $form->field($model, 'text')->widget(CKEditor::className(), [
+		'options' => ['rows' => 6],
+		'preset' => 'basic'
+                ]) ?>
+
+                
+                
                 <?= $form->field($model, 'name') ?>
                 <?= $form->field($model, 'email') ?>
                 <?= $form->field($model, 'subject') ?>

@@ -25,3 +25,8 @@ composer.phar
 phpunit.phar
 # local phpunit config
 /phpunit.xml
+
+# Sass cache not needed
+.sass-cache
+
+runtime/*

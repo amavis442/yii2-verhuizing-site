@@ -39,9 +39,9 @@ AppAsset::register($this);
                     ['label' => 'About', 'url' => ['/site/about']],
                     ['label' => 'Contact/Boeken', 'url' => ['/site/contact']],
                     Yii::$app->user->isGuest ?
-                        ['label' => 'Login', 'url' => ['/site/login']] :
+                        ['label' => 'Login', 'url' => ['/auth/default/login']] :
                         ['label' => 'Logout (' . Yii::$app->user->identity->username . ')',
-                            'url' => ['/site/logout'],
+                            'url' => ['/auth/default/logout'],
                             'linkOptions' => ['data-method' => 'post']],
                 ],
             ]);
@@ -59,7 +59,7 @@ AppAsset::register($this);
     <footer class="footer">
         <div class="container">
             <p class="pull-left">&copy; <a href="http://www.patrickswebsite.nl" target="_blank">Patrickswebsite.nl</a> <?= date('Y') ?></p>
-            <p class="pull-right"><?= Yii::powered() ?></p>
+            <p class="pull-right"><a href='http://www.yiiandme.com'>Yiiandme.com</a></p>
         </div>
     </footer>
 

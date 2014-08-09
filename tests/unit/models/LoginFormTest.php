@@ -20,8 +20,8 @@ class LoginFormTest extends TestCase
     {
         $model = $this->mockUser(null);
 
-        $model->username = 'some_username';
-        $model->password = 'some_password';
+        $model->username = 'patrick@yiiandme.com';
+        $model->password = 'hd9251zp';
 
         $this->specify('user should not be able to login, when there is no identity', function () use ($model) {
             expect('model should not login user', $model->login())->false();

@@ -22,7 +22,7 @@ class ContactForm extends Model
     public $plaats;
     public $starttijd;
     public $telefoon;
-    
+    public $text;
 
     /**
      * @return array the validation rules.
